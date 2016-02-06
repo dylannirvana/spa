@@ -1,4 +1,4 @@
-HomeController = RouteController.extend({
+TodosController = RouteController.extend({
 
   // A place to put your subscriptions
   // this.subscribe('items');
@@ -6,7 +6,7 @@ HomeController = RouteController.extend({
   // this.subscribe('item', this.params._id).wait();
 
   subscriptions: function() {
-    this.subscribe('todos');
+    this.subscribe('detail', this.params._id);
   },
 
   // Subscriptions or other things we want to "wait" on. This also
@@ -24,6 +24,7 @@ HomeController = RouteController.extend({
   // return Posts.findOne({_id: this.params._id});
 
   data: function () {
+    return Todos.findOne({_id: this.params._id});
   },
 
   // You can provide any of the hook options
@@ -46,8 +47,8 @@ HomeController = RouteController.extend({
   // Example:
   //  action: 'myActionFunction'
 
-  action: function () {
-    this.render();
+  detail: function () {
+    this.render('TodosDetail');
   },
   onAfterAction: function () {
   },

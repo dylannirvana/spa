@@ -2,13 +2,3 @@ Application production builds can go in this directory. To build your
 application for staging or production run this command:
 
 > iron build
-
-This application uses Iron Meteor with Mongo to scaffold
-Single Page Applications entirely on Node. This version uses SASS
-and JavaScript. Subsequent versions will use CoffeeScript and
-other libraries.
-
-What I hope to achieve is an extensible modular application, with
-clear design patterns in an IdevE, full-stack isomorphic JavaScript,
-that provides at least as much functionality as the other
-applications, but without being so bombastic. 
