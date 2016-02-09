@@ -7,6 +7,7 @@ HomeController = RouteController.extend({
 
   subscriptions: function() {
     this.subscribe('todos');
+    this.subscribe('users');
   },
 
   // Subscriptions or other things we want to "wait" on. This also

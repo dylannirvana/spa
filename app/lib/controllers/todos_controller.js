@@ -6,7 +6,7 @@ TodosController = RouteController.extend({
   // this.subscribe('item', this.params._id).wait();
 
   subscriptions: function() {
-    this.subscribe('detail', this.params._id);
+    this.subscribe('todo', this.params._id);
   },
 
   // Subscriptions or other things we want to "wait" on. This also
@@ -50,6 +50,11 @@ TodosController = RouteController.extend({
   detail: function () {
     this.render('TodosDetail');
   },
+  edit: function(){
+    this.state.set('isEditing', true);
+    this.render('TodosDetail');
+  },
+
   onAfterAction: function () {
   },
   onStop: function () {

@@ -21,8 +21,12 @@ to an enterprise level application and massively reduces the code overhead.
 
 My exercise in OOP makes it easier to build out a project, focusing on
 modularity, encapsulation, abstracting away dead-end patterns. I intend
-to use Meteor (and Angular) much more in the future.
+to use Meteor much more in the future, possibly with Angular.
 
 As ECMA6 gets underway I may explore the pseudo 'class', but as Crockford
 has repeatedly pointed out, it may be better to not obscure the fact
-that JavaScript uses prototypical inheritance. 
+that JavaScript uses prototypical inheritance.
+
+A note on procedure. I am reverse engineering a number of snazzy applications
+along the way and putting them together in order to see if I end up where I
+think I'm going to (probably not); nonetheless, it so far is pretty interesting.
